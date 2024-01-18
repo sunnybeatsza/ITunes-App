@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/search", async (req, res) => {
-  const searchTerm = req.query.term || "Thriller"; // Default search term if not provided
+  const searchTerm = req.query.term;
 
   try {
     const response = await axios.get("https://itunes.apple.com/search", {
