@@ -5,6 +5,7 @@ const axios = require("axios");
 
 const PORT = process.env.PORT || 8080;
 
+app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -32,5 +33,3 @@ app.get("/search", async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server is listening on port http://localhost:${PORT}`);
 });
-
-app.use(cors());

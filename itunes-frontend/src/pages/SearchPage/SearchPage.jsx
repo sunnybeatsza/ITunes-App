@@ -1,13 +1,12 @@
 import React from "react";
-import "./Home.css";
 import { Sidemenu } from "../../components/Sidemenu/Sidemenu";
-import { MainPage } from "../../components/MainPage/MainPage";
+import { SearchLayout } from "../../components/SearchLayout/SearchLayout";
 
-export const Home = () => {
+export const SearchPage = () => {
   return (
     <div className="Home-container">
       <Sidemenu />
-      <MainPage />
+      <SearchLayout />
     </div>
   );
 };
