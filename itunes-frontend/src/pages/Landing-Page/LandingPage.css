@@ -1,0 +1,33 @@
+.background-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./Assets/simon-noh-0rmby-3OTeI-unsplash.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: auto;
+  height: 35rem;
+}
+.features-cards-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(./Assets/yannis-papanastasopoulos-yWF2LLan-_o-unsplash.jpg) no-repeat
+      center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: auto;
+  height: 35rem;
+}
+
+.additional-info-wrapper {
+  background-color: black;
+}
+
+.subscriptions-wrapper {
+  background-color: black;
+}
+
+.footer-wrapper {
+  background-color: black;
+}

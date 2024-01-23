@@ -1,0 +1,17 @@
+.main-content {
+  flex: 1; /* Takes up remaining space in the container */
+  width: 100%;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header li {
+  display: inline-block;
+}
+
+.main-header ul {
+  padding: 0px;
+}
