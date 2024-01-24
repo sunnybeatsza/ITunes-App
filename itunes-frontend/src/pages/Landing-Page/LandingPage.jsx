@@ -10,7 +10,7 @@ import "./LandingPage.css";
 
 export const LandingPage = () => {
   return (
-    <div>
+    <div className="bg-black">
       <div className="hero-section-wrapper background-image">
         <Navbar />
         <Hero />

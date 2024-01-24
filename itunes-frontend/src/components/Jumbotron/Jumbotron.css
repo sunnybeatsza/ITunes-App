@@ -1,12 +1,10 @@
 .jumbotron-container {
-  border: 2px solid black;
   margin: 2em;
   width: auto;
   height: 20em;
   border-radius: 20px;
 }
 .jumbotron-small {
-  border: 2px solid black;
   margin: 1em;
   width: 13em;
   height: 10em;

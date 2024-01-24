@@ -1,6 +1,7 @@
 import React from "react";
 import logoImage from "../../pages/Homepage/Assets/anastasia-zhenina-3c9Ltv9kf_s-unsplash.jpg";
 import "./Sidemenu.css";
+import { Link } from "react-router-dom";
 
 export const Sidemenu = () => {
   return (
@@ -18,14 +19,18 @@ export const Sidemenu = () => {
           <li>
             <a href="#">
               <i class="bi bi-house-door">
-                <span className="mx-2">Home</span>
+                <span className="mx-2">
+                  <Link to="/Home">Home</Link>
+                </span>
               </i>
             </a>
           </li>
           <li>
             <a href="#">
               <i class="bi bi-search">
-                <span className="mx-2">Search</span>
+                <span className="mx-2">
+                  <Link to="/Search">Search</Link>
+                </span>
               </i>
             </a>
           </li>
@@ -52,7 +57,9 @@ export const Sidemenu = () => {
           <li>
             <a href="#">
               <i class="bi bi-suit-heart-fill">
-                <span className="mx-2">Liked Songs</span>
+                <span className="mx-2">
+                  <Link to="/Favorites">Favorites</Link>
+                </span>
               </i>
             </a>
           </li>

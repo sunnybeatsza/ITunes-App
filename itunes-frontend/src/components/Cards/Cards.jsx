@@ -7,33 +7,37 @@ export const Cards = () => {
       <div className="d-flex justify-content-center cards-wrapper align-content-center flex-wrap">
         <div className="container my-5">
           <div className="box">
-            <span className="title">GLASS EFFECT</span>
+            <span className="title">Personalized Playlists</span>
             <div>
-              <strong>JOE WATSON SBF</strong>
-              <p>0000 000 000 0000</p>
-              <span>VALID</span> <span>01/28</span>
+              <p>
+                Tailor your music experience with smart playlists that adapt to
+                your taste, ensuring the perfect soundtrack for every moment.
+              </p>
             </div>
           </div>
         </div>
 
         <div className="container my-5">
           <div className="box">
-            <span className="title">GLASS EFFECT</span>
+            <span className="title">Discover Emerging Artists</span>
             <div>
-              <strong>JOE WATSON SBF</strong>
-              <p>0000 000 000 0000</p>
-              <span>VALID</span> <span>01/28</span>
+              <p>
+                Explore a world of undiscovered talent and be the first to
+                uncover the sounds that could become the next big thing.
+              </p>
             </div>
           </div>
         </div>
 
         <div className="container my-5">
           <div className="box">
-            <span className="title">GLASS EFFECT</span>
+            <span className="title">Seamless Social Sharing</span>
             <div>
-              <strong>JOE WATSON SBF</strong>
-              <p>0000 000 000 0000</p>
-              <span>VALID</span> <span>01/28</span>
+              <p>
+                Connect with friends, share favorite tracks, and collaborate on
+                playlists effortlessly, making music a shared and social
+                experience.
+              </p>
             </div>
           </div>
         </div>

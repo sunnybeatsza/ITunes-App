@@ -14,22 +14,7 @@ export const Footer = () => {
             </li>
             <li className="nav-item">
               <a href="#" className="nav-link px-2 text-light">
-                Features
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-light">
                 Pricing
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-light">
-                FAQs
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link px-2 text-light">
-                About
               </a>
             </li>
           </ul>
