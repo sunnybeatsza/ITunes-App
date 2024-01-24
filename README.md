@@ -25,7 +25,6 @@ Muso is not just an app; it's a musical journey that enhances your connection wi
 3. [Features](#features)
 4. [Configuration](#configuration)
 5. [Contributing](#contributing)
-6. [License](#license)
 
 ## Installation
 
@@ -82,3 +81,101 @@ Follow these steps to set up and run Muso on your local machine:
    Open your web browser and navigate to `http://localhost:8080` to access the Muso application.
 
 Now, Muso should be up and running on your local machine. If you encounter any issues or have further questions, feel free to consult the project documentation or reach out to the community for assistance.
+
+## Usage
+
+To use the project, follow these steps:
+
+### Searching for Music Artists
+
+To search for music artists using Muso, you can make a GET request to the `/search/artist` endpoint. Here's an example using Express:
+
+```javascript
+// Example using Express
+app.get("/search/artist", async (req, res) => {
+  const searchTerm = req.query.term;
+
+  try {
+    const response = await axios.get(
+      "https://itunes.apple.com/search?country=us",
+      {
+        params: {
+          term: searchTerm,
+          entity: "musicArtist",
+        },
+      }
+    );
+
+    const results = response.data.results;
+    res.json(results);
+  } catch (error) {
+    console.error(
+      "Error fetching data for music artists from iTunes API:",
+      error.message
+    );
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+```
+
+### Key Features
+
+## Searching for Songs
+
+Retrieve a list of songs by making a GET request to the /search/songs endpoint. This endpoint queries the iTunes API for music based on the specified search term
+
+```javascript
+// Example using Express
+app.get("/search/songs", async (req, res) => {
+  const searchTerm = req.query.term;
+
+  try {
+    const response = await axios.get(
+      "https://itunes.apple.com/search?country=us",
+      {
+        params: {
+          term: searchTerm,
+          media: "music",
+        },
+      }
+    );
+
+    const results = response.data.results;
+    res.json(results);
+  } catch (error) {
+    console.error(
+      "Error fetching data for music artists from iTunes API:",
+      error.message
+    );
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+```
+
+## Searching for Albums
+
+To find albums, use the /search/album endpoint. This route communicates with the iTunes API to search for albums based on the provided term.
+
+```javascript
+app.get("/search/album", async (req, res) => {
+  const searchTerm = req.query.term;
+
+  try {
+    const response = await axios.get("https://itunes.apple.com/search", {
+      params: {
+        term: searchTerm,
+        entity: "album",
+      },
+    });
+
+    const results = response.data.results;
+    res.json(results);
+  } catch (error) {
+    console.error(
+      "Error fetching data for music artists from iTunes API:",
+      error.message
+    );
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+```
