@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.622a05a9.css",
+    "main.js": "/static/js/main.aaaaedbb.js",
+    "static/media/yannis-papanastasopoulos-yWF2LLan-_o-unsplash.jpg": "/static/media/yannis-papanastasopoulos-yWF2LLan-_o-unsplash.14bc3176ba5d49c65a09.jpg",
+    "static/media/anastasia-zhenina-3c9Ltv9kf_s-unsplash.jpg": "/static/media/anastasia-zhenina-3c9Ltv9kf_s-unsplash.b4c0f00359d2262b123c.jpg",
+    "static/media/simon-noh-0rmby-3OTeI-unsplash.jpg": "/static/media/simon-noh-0rmby-3OTeI-unsplash.43efbb1a426726845550.jpg",
+    "index.html": "/index.html",
+    "main.622a05a9.css.map": "/static/css/main.622a05a9.css.map",
+    "main.aaaaedbb.js.map": "/static/js/main.aaaaedbb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.622a05a9.css",
+    "static/js/main.aaaaedbb.js"
+  ]
+}
